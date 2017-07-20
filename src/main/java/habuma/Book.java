@@ -1,6 +1,7 @@
 package habuma;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -23,12 +24,12 @@ public class Book {
 	private final String isbn;
 	private final String title;
 	
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	private final Publisher publisher;
 
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	private final Author author;
 	
-	private final int pages;
+	private final Integer pages;
 	
 }
