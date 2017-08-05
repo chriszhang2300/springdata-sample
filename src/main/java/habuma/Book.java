@@ -29,6 +29,6 @@ public class Book {
 	@ManyToOne
 	private final Author author;
 	
-	private final int pages;
+	private final Integer pages;
 	
 }

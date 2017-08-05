@@ -20,6 +20,7 @@ public class Author {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	private final String name;
+	private final String firstName;
+	private final String lastName;
 	
 }
