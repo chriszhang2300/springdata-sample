@@ -6,6 +6,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import org.springframework.context.annotation.Lazy;
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,9 +26,11 @@ public class Book {
 	private final String title;
 	
 	@ManyToOne
+	@Lazy
 	private final Publisher publisher;
 
 	@ManyToOne
+	@Lazy
 	private final Author author;
 	
 	private final Integer pages;
