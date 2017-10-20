@@ -21,6 +21,7 @@ public class Book {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	private final String isbn;
+
 	private final String title;
 	
 	@ManyToOne
