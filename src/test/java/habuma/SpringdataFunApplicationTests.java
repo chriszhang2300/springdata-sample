@@ -11,6 +11,7 @@ public class SpringdataFunApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		
 	}
 
 }
